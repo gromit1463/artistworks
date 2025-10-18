@@ -1,5 +1,9 @@
 <script setup>
+import LessonTopBar from "./LessonTopBar.vue";
+import Dropdown from "../ui/Dropdown.vue";
+import LessonNavigation from "./LessonNavigation.vue";
 import LessonOverviewHeader from "./LessonOverviewHeader.vue";
+import LessonList from "./LessonList.vue";
 
 const dropdownData = [
   {

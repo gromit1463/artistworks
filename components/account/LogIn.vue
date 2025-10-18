@@ -1,6 +1,5 @@
 <script setup>
-import { ref } from "vue";
-const isLoggedIn = useState("isLoggedIn");
+import LogInForm from "./LogInForm.vue";
 </script>
 
 <template>

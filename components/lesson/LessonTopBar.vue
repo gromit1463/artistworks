@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import SearchBox from "../ui/SearchBox.vue";
+import Notifications from "../ui/Notifications.vue";
 import SubmitVideoButton from "./SubmitVideoButton.vue";
 </script>
 

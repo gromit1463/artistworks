@@ -1,4 +1,5 @@
 <script setup>
+import LessonCard from "./LessonCard.vue";
 defineProps({ lessons: Array });
 </script>
 
