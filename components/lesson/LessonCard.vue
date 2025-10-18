@@ -1,4 +1,5 @@
 <script setup>
+import ProgressBar from "@/components/ui/ProgressBar.vue";
 defineProps({ lesson: Object });
 </script>
 
