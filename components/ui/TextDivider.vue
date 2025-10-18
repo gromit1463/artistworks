@@ -3,13 +3,14 @@
     <span class="content"><slot /></span>
   </div>
 </template>
+
 <style>
 .text-divider {
   background: linear-gradient(
     to bottom,
     transparent calc(50% - 0.5px),
-    #ebebeb calc(50% - 0.5px),
-    #ebebeb calc(50% + 0.5px),
+    var(--border-color) calc(50% - 0.5px),
+    var(--border-color) calc(50% + 0.5px),
     transparent calc(50% + 0.5px)
   );
   text-align: center;

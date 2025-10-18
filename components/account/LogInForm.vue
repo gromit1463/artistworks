@@ -62,7 +62,7 @@ function logIn() {
   height: 52px;
   border-radius: 100px;
   border: 0;
-  background-color: #4285f4;
+  background-color: var(--blue);
   color: #fff;
   font-size: 14px;
   font-weight: 700;

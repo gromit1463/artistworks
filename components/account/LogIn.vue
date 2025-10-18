@@ -54,8 +54,9 @@ const isLoggedIn = useState("isLoggedIn");
   height: 100vh;
   left: 0px;
   top: 0px;
-  background: linear-gradient(139.18deg, #052444 38.31%, #4285f4 88.24%);
+  background: linear-gradient(139.18deg, #052444 38.31%, var(--blue) 88.24%);
   padding: 50px;
+  overflow: hidden;
 }
 .container-login .sidebar h1 {
   color: #fff;

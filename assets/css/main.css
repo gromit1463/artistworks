@@ -1,6 +1,10 @@
 @import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
+:root {
+  --border-color: #ebebeb;
+  --blue: #4285f4;
+}
 body {
   font-family: Manrope, Helvetica, Arial, sans-serif;
   background: none #fff;
