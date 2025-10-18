@@ -43,7 +43,7 @@ function logIn() {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 400px;
+  width: 100%400px;
   margin: 30px 0;
 }
 .login-form .input-group {

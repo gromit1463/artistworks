@@ -14,7 +14,7 @@ const isLoggedIn = useState("isLoggedIn");
     </div>
     <div class="content">
       <div class="login-form-wrapper">
-        <div class="login-form">
+        <div>
           <div class="login-mini-logo"></div>
           <h2>Sign in to ArtistWorks</h2>
           <div>
@@ -25,13 +25,13 @@ const isLoggedIn = useState("isLoggedIn");
           <TextDivider>Or sign in with</TextDivider>
           <div class="button-group">
             <IconButton
-              iconSrc="/images/logo-google.svg"
+              iconSrc="/images/icons/logo-google.svg"
               alt="Log in with Google"
             >
               Google
             </IconButton>
             <IconButton
-              iconSrc="/images/logo-apple.svg"
+              iconSrc="/images/icons/logo-apple.svg"
               alt="Log in with Apple"
             >
               Apple
@@ -111,5 +111,26 @@ const isLoggedIn = useState("isLoggedIn");
 }
 .container-login .button-group .icon-button {
   flex: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .container-login > .sidebar {
+    display: none;
+  }
+  .container-login > .content {
+    display: block;
+    width: 400px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container-login > .content {
+    width: 100%;
+    padding-top: 50px;
+  }
+  .container-login .login-form-wrapper {
+    display: block;
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <script setup>
-const isLoggedIn = useState("isLoggedIn", () => false);
+const isLoggedIn = useState("isLoggedIn", () => true);
 </script>
 <template>
   <div class="container-main">
