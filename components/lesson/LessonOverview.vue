@@ -1,4 +1,6 @@
 <script setup>
+import LessonOverviewHeader from "./LessonOverviewHeader.vue";
+
 const dropdownData = [
   {
     title: "Banjo with Noam Pikelny",
@@ -75,6 +77,12 @@ const lessons = [
     </div>
     <div class="content">
       <LessonTopBar />
+      <LessonOverviewHeader
+        title="Intermediate"
+        :topics="64"
+        :lessonVideos="283"
+        :videoExchanges="1673"
+      />
       <LessonList :lessons="lessons" />
     </div>
   </div>
