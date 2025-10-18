@@ -1,13 +1,18 @@
 <script setup>
+import { ref } from "vue";
 const isLoggedIn = useState("isLoggedIn");
 const username = ref("");
 const password = ref("");
 
 function logIn() {
   console.log({
-    username,
-    password,
+    username: username.value,
+    password: password.value,
   });
+
+  if (username.value === "demo" && password.value === "demo") {
+    isLoggedIn.value = true;
+  }
 }
 </script>
 
@@ -16,11 +21,15 @@ function logIn() {
     <div class="login-form">
       <div class="input-group">
         <label for="username">Username</label>
-        <input type="text" :value="username" />
+        <input type="text" v-model="username" placeholder="Enter username" />
       </div>
       <div class="input-group">
         <label for="password">Password</label>
-        <input type="password" :value="password" />
+        <input
+          type="password"
+          v-model="password"
+          placeholder="Enter password"
+        />
       </div>
       <button class="login-button" type="submit" @click="logIn">
         Continue
