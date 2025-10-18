@@ -1,6 +1,13 @@
-<script setup></script>
+<script setup>
+const isLoggedIn = useState("isLoggedIn", () => false);
+</script>
 <template>
   <div class="container-main">
-    <LogIn />
+    <div v-if="!isLoggedIn">
+      <LogIn />
+    </div>
+    <div v-else>
+      <LessonOverview />
+    </div>
   </div>
 </template>
